@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #cdcbf7;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+
+    
+}
+.logo{
+    filter: invert(38%) sepia(46%) saturate(4136%) hue-rotate(200deg) brightness(91%) contrast(171%);
+}
+
+.txt-container{
+    width: 600px;
+    height: 90vh;
+}
+.txt-container textarea{
+    width: 500px;
+    border: none;
+    height: 70vh;
+    background-color: #cdcbf7;
+    font-size: 20PX;
+}
+.txt-container textarea::placeholder{
+    color: #6c63ff;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+
+}
+.alerta-container{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+.alerta-container img{
+    height: 15px;
+}
+#msg-container{
+    height: 90vh;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#msg-container img{
+    height: 350px;
+}
+.descricao-container{
+    text-align: center;
+}
+.button-container{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #ffffff00;
+    color: #000;
+    width: 11.5em;
+    height: 3.9em;
+    border: #3654ff 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+    font-size: 18px;
+  }
+  
+  .button:hover {
+    background-color: #3654ff;
+    cursor: pointer;
+  }
+  
+  .button svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+  }
+  
+  .button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .text {
+    margin: 0 1.5em
+  }
+#txt-result{
+    height: 90vh;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+.show{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.hide{
+    display: none;
+}

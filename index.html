@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/img/logo.png" alt="logo" class="logo">
+    </header>
+    <main>
+        <section class="txt-container">
+            <textarea name="" id="text-input" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+            <div class="alerta-container">
+                <img src="./assets/img/exclamação.png" alt="icone"><p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="button-container">
+                <button class="button" onclick="criptografar()">
+
+  
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                    </svg>
+                  
+                    
+                    <div class="text" >
+                        Criptografar
+                    </div>
+                  
+                  </button>       
+                  <button class="button" onclick="descriptografar()" >
+
+  
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                    </svg>
+                  
+                    
+                    <div class="text">
+                        Descriptografar
+                    </div>
+                  
+                  </button>
+                   </div>
+        </section>
+        <section class="msg-side">
+            <div id="txt-result" class=" hide">
+                <p id="txt-final">
+                    
+                </p>
+                <button class="button" onclick="copiar()">
+
+  
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                    </svg>
+                  
+                    
+                    <div class="text" >
+                        Copiar
+                    </div>
+                  
+                  </button>       
+            </div>
+            <div class=" show" id="msg-container">
+                <img src="./assets/img/undraw_searching_re_3ra9.svg" alt="ilustração" class="ilustacao">
+                <div class="descricao-container">
+                    <h1>Nenhuma mensagem encontrada</h1>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+        </div>
+        </section>
+    </main>
+</body>
+<script src="./script.js" defer></script>
+</html>
